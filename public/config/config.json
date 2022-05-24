@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "0x9eb5E7594Fc072248467fA30A788D659afE7611B",
+  "SCAN_LINK": "https://polygonscan.com/token/0x9eb5E7594Fc072248467fA30A788D659afE7611B",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "MATIC",
+    "ID": 137
+  },
+  "NFT_NAME": "9FT NFT",
+  "SYMBOL": "MATIC",
+  "MAX_SUPPLY": 1000,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": 100,
+  "MAX_MINT": 10,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",
+  "SHOW_BACKGROUND": true
+}
