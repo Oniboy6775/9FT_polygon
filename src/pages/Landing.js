@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Outlet } from 'react-router-dom';
-import { FaAlignRight } from 'react-icons/fa';
-import SmallNav from '../components/SmallNav';
-import BigNav from '../components/BigNav';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Outlet } from "react-router-dom";
+import { FaAlignRight } from "react-icons/fa";
+import SmallNav from "../components/SmallNav";
+import BigNav from "../components/BigNav";
 
-import { useEffect } from 'react';
-import SocialLinks from '../components/SocialLinks';
+import { useEffect } from "react";
+import SocialLinks from "../components/SocialLinks";
 const Landing = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   useEffect(() => {
-    document.getElementById('background-video').play();
+    document.getElementById("background-video").play();
   }, []);
   return (
     <Container className="container">
@@ -46,6 +46,7 @@ const Container = styled.div`
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
   }
   .header__container {
     display: flex;
