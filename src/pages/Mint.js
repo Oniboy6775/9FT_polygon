@@ -25,9 +25,7 @@ const Mint = ({ myFunctions }) => {
       <div className="mint__container">
         {/* <h2 className="sub__title">9ft NFT</h2> */}
         <div className="min__price row">
-          <p className="col">
-            TOTAL ITEM: {maxSupply} {symbol}
-          </p>{" "}
+          <p className="col">TOTAL ITEM: {maxSupply}</p>
         </div>
         <div className="alert-danger">{feedback}</div>
         <div className="gif__container row">
@@ -38,11 +36,16 @@ const Mint = ({ myFunctions }) => {
             <h3 className="mint__price__title">Mint Price</h3>
 
             <div className="min__price row">
-              <p className="col">MIN</p> <p className="col">{cost} MATIC</p>
+              <p className="col">MIN</p>{" "}
+              <p className="col">
+                {cost} {symbol}
+              </p>
             </div>
             <div className="max__price row">
               <p className="col">MAX</p>{" "}
-              <p className="col">{displayCost} MATIC</p>
+              <p className="col">
+                {displayCost} {symbol}
+              </p>
             </div>
           </div>
         </div>

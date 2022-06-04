@@ -1,17 +1,17 @@
 {
-  "CONTRACT_ADDRESS": "0x9eb5E7594Fc072248467fA30A788D659afE7611B",
-  "SCAN_LINK": "https://polygonscan.com/token/0x9eb5E7594Fc072248467fA30A788D659afE7611B",
+  "CONTRACT_ADDRESS": "0x8B0357Ca39060Bb604a9c616d94952749aEa8E69",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x8B0357Ca39060Bb604a9c616d94952749aEa8E69",
   "NETWORK": {
-    "NAME": "Polygon",
-    "SYMBOL": "MATIC",
-    "ID": 137
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
   },
   "NFT_NAME": "9FT NFT",
-  "SYMBOL": "MATIC",
-  "MAX_SUPPLY": 1000,
+  "SYMBOL": "ETH",
+  "MAX_SUPPLY": 61,
   "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 100,
-  "MAX_MINT": 10,
+  "DISPLAY_COST": 0.01,
+  "MAX_MINT": 1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/nerdy-coder-clones",

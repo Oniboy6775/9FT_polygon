@@ -95,6 +95,13 @@
     "type": "event"
   },
   {
+    "inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "name": "addressMintedBalance",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       { "internalType": "address", "name": "to", "type": "address" },
       { "internalType": "uint256", "name": "tokenId", "type": "uint256" }
@@ -143,6 +150,22 @@
     ],
     "name": "isApprovedForAll",
     "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "isPresale",
+    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_userAddress", "type": "address" }
+    ],
+    "name": "isWhiteListed",
+    "outputs": [{ "internalType": "bool", "name": "my", "type": "bool" }],
     "stateMutability": "view",
     "type": "function"
   },
@@ -206,6 +229,13 @@
     "inputs": [],
     "name": "paused",
     "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "presaleMaxMint",
+    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
     "stateMutability": "view",
     "type": "function"
   },
@@ -279,6 +309,13 @@
     "type": "function"
   },
   {
+    "inputs": [{ "internalType": "bool", "name": "_state", "type": "bool" }],
+    "name": "setIsPresale",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "uint256",
@@ -292,8 +329,30 @@
     "type": "function"
   },
   {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_newTotalSupply",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxSupply",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "inputs": [{ "internalType": "bool", "name": "_state", "type": "bool" }],
     "name": "setPaused",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_newLimit", "type": "uint256" }
+    ],
+    "name": "setPresaleMaxMint",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -319,6 +378,15 @@
       { "internalType": "string", "name": "_uriSuffix", "type": "string" }
     ],
     "name": "setUriSuffix",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address[]", "name": "_users", "type": "address[]" }
+    ],
+    "name": "setWhiteListedUsers",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -397,6 +465,13 @@
     "outputs": [
       { "internalType": "uint256[]", "name": "", "type": "uint256[]" }
     ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "whiteListedAddresses",
+    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },
